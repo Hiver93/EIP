@@ -1,0 +1,5 @@
+package com.kdw.eip.workbook.domain.entity;
+
+public class Workbook {
+
+}

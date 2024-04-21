@@ -1,0 +1,16 @@
+package com.kdw.eip.workbook.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.kdw.eip.workbook.domain.dto.WorkbookRespDto;
+import com.kdw.eip.workbook.domain.entity.Workbook;
+
+@Service
+public class WorkbookService {
+	public List<WorkbookRespDto> getWorkbookList(){
+		return new ArrayList<WorkbookRespDto>();
+	}
+}

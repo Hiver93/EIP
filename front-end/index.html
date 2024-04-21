@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 추가</title>
+</head>
+<body>
+    <h1>문제 추가</h1>
+    <br>
+    <form>
+        <p>question</p>
+        <textarea id="question" cols="40" rows="10">
+        </textarea></br>
+        <p>answer</p>
+        <textarea id="answer" cols="40" rows="10">
+        </textarea></br>
+        <input type="submit" onclick="post()">
+    </form>
+</body>
+
+<script >
+    function post(){
+        event.preventDefault();
+        let q = document.getElementById("question").value
+        let a = document.getElementById("answer").value
+        let data = {"question":q,"answer":a};
+        let jsonData = JSON.stringify(data);
+        let url = "http://localhost:8080/workbook";
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.setRequestHeader("Content-Type","application/json");
+
+        xhr.onreadystatechange = function () {
+            if(xhr.readyState === 4 && xhr.status === 200){
+                let response = JSON.parse(xhr.responseText);
+                console.log(response);
+            }
+        }
+
+        xhr.send(jsonData);
+    }
+
+
+</script>
+
+
+</html>

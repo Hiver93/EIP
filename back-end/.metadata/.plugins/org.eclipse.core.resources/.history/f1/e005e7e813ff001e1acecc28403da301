@@ -1,0 +1,8 @@
+package com.kdw.eip.workbook.service;
+
+import org.springframework.stereotype.Service;
+
+@Servicei
+public class WorkbookService {
+	
+}

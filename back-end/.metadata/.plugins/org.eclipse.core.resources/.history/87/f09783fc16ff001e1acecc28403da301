@@ -1,0 +1,8 @@
+package com.kdw.eip.workbook.domain.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity(name = "workbook")
+public class Workbook {
+
+}

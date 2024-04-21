@@ -1,0 +1,5 @@
+package com.kdw.eip.workbook.domain.dto;
+
+public class WorkBookRespDto {
+
+}

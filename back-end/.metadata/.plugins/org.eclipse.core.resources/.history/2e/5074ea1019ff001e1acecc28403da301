@@ -1,0 +1,9 @@
+package com.kdw.eip.workbook.domain.dto.resp;
+
+import lombok.Data;
+
+@Data
+public class WorkbookRespDto {
+	private String question;
+	private String answer;
+}

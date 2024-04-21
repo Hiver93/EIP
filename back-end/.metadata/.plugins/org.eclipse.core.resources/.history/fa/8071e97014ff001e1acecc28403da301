@@ -1,0 +1,21 @@
+package com.kdw.eip.workbook.controller;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kdw.eip.workbook.domain.dto.WorkbookRespDto;
+import com.kdw.eip.workbook.service.WorkbookService;
+
+@RestController("/workbook")
+public class WorkbookController {
+	private WorkbookService workbookService;
+	
+	
+	@PostMapping("")
+	public ResponseEntity<List<WorkbookRespDto>> workbookList(){
+		
+	}
+}

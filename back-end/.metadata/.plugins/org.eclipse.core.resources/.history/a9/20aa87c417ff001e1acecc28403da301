@@ -1,0 +1,2 @@
+spring.application.name=eip
+spring.profiles.active = secret

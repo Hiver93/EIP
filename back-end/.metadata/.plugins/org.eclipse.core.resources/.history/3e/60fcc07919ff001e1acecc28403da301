@@ -1,0 +1,13 @@
+package com.kdw.eip.workbook.domain.dto.req;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class WorkbookReqDto {
+	private String question;
+	private String answer;
+	
+	public 
+}

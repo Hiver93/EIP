@@ -1,0 +1,11 @@
+package com.kdw.eip.workbook.domain.entity;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+
+@Entity(name = "workbook")
+public class Workbook {
+	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id", updatable = false)
+	Long id;
+}

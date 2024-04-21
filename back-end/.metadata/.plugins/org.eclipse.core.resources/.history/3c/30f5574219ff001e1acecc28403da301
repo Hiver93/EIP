@@ -1,0 +1,20 @@
+package com.kdw.eip.workbook.domain.dto.resp;
+
+import com.kdw.eip.workbook.domain.entity.Workbook;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class WorkbookRespDto {
+	private String question;
+	private String answer;
+	
+	public static WorkbookRespDto fromEntity(Workbook workbook) {
+		return WorkbookRespDto.builder()
+				.answer(workbook.getAnswer())
+				.question(workbook.getQuestion())
+				.build();
+	}
+}
