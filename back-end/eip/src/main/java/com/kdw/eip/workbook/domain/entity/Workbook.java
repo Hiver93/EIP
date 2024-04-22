@@ -28,9 +28,9 @@ public class Workbook {
 	@Column(name = "id", updatable = false)
 	Long id;
 	
-	@Column(name="question")
+	@Column(name="question", length = 3000)
 	String question;
-	@Column(name="answer")
+	@Column(name="answer", length = 3000)
 	String answer;
 	
 	@CreatedDate
