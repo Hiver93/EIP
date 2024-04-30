@@ -11,7 +11,7 @@
 - **상세**
     - 문제 추가
         
-        ![web_image.png](images/web_image.png.png)
+        ![web_image.png](images/web_image.png)
         
         - 웹사이트에 접속하여 문제와 정답을 입력하여 제출합니다.
     - 복습
